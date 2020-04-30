@@ -1,6 +1,6 @@
 var Biche_params = {
     "title": "Thewinlo31",
-    "name": "Thewinlo31 is",
+    "name": "Thewinlo31",
     "message": "Il est en ligne !",
     "offlineUrl": "http:\/\/www.twitch.tv\/Thewinlo31",
     "default_color": "#c23131",

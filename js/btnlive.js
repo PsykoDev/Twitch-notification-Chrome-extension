@@ -1,3 +1,10 @@
+var BtnLive = function () {
+    this.status = null;
+    this.viewers = 0;
+    this.title = null;
+    this.liveUrl = "http://twitch.com/Thewinlo31";
+}
+
 var ff_module = false;
 if (typeof require !== "undefined") {
     ff_module = true;
@@ -152,6 +159,7 @@ BtnLive.prototype.__get = function(url, type, callback, context) {
 
                     {
                         callback(response.json);
+                        twitchdata();
                     } else {
                         callback(response.text);
                     }
@@ -219,3 +227,4 @@ BtnLive.prototype.__checkDone = function(result, chaine) {
 if (typeof require !== "undefined") {
     exports.BtnLive = BtnLive;
 }
+
