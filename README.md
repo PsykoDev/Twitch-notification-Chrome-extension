@@ -12,5 +12,11 @@
 * [*] stream detection
 * [*] Windows / chrome notification toast
 * [*] Bagde onlie / offline changer
-
+<br>
+# Screenshot
+## browser view
 ![Screenshot](https://github.com/PsykoDev/Twitch-notification-Chrome-extension/blob/master/git/twitch.png?raw=true)
+## toast view
+![Screenshot](https://github.com/PsykoDev/Twitch-notification-Chrome-extension/blob/master/git/twitch1.png?raw=true)
+## Notification center view
+![Screenshot](https://github.com/PsykoDev/Twitch-notification-Chrome-extension/blob/master/git/twitch3.png?raw=true)
