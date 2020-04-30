@@ -1,21 +1,22 @@
 {
-   "background": {
+  "background": {
     "scripts": [ "js/parameters.js", "js/btnlive.js", "js/chrome.js" ]
-   },
-  "browser_action": {
-    "default_icon": "img/iconoff48.png"
   },
-   "description": "blibli blabla!",
+  "browser_action": {
+    "default_icon": "img/iconoff48.png",
+    "default_popup": "index.html"
+  },
+  "description": "blibli blabla!",
   "icons": {
     "128": "img/iconoff128.png",
     "16": "img/iconoff16.png",
     "48": "img/iconoff48.png"
   },
-   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi9DtAGBgeEOAneMLGqPUZ2VYE7s/s+vIc7rlfK2Uu3DZRi4bnJVORov9tS0egdbWD81kEUGUdpBhOOqrPHPU7wK5hzwJbdHY6uXjQ5k1AXFJLAoVng7a0CumVBUWyXOGX0rRf2Mt2wPj0GGXozgtapAgcDchjTWUjt39t+9j0I4DcSbslZ8A0CZ7LTlvtkw6cWRr2bao8avCcbFn3C31482v6PNTK04YaKN6s6riiUb5hGhHxLOKNdDybp2Fe5GUEieLK3ssdnRpr7cNc/AmmYjYIOt6JzJjkM8uC1f2HeEmdbO7/TD1HcSwmuMqOzdgj0T4hKmZwSierzi0O7w1AwIDAQAB",
-   "manifest_version": 2,
-    "name": "Thewinlo31 Stream notification",
-    "author": " PsykoDev",
-   "permissions": [ "https://api.twitch.tv/", "notifications" ],
-   "update_url": "https://clients2.google.com/service/update2/crx",
-   "version": "3.0"
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAi9DtAGBgeEOAneMLGqPUZ2VYE7s/s+vIc7rlfK2Uu3DZRi4bnJVORov9tS0egdbWD81kEUGUdpBhOOqrPHPU7wK5hzwJbdHY6uXjQ5k1AXFJLAoVng7a0CumVBUWyXOGX0rRf2Mt2wPj0GGXozgtapAgcDchjTWUjt39t+9j0I4DcSbslZ8A0CZ7LTlvtkw6cWRr2bao8avCcbFn3C31482v6PNTK04YaKN6s6riiUb5hGhHxLOKNdDybp2Fe5GUEieLK3ssdnRpr7cNc/AmmYjYIOt6JzJjkM8uC1f2HeEmdbO7/TD1HcSwmuMqOzdgj0T4hKmZwSierzi0O7w1AwIDAQAB",
+  "manifest_version": 2,
+  "name": "Thewinlo31 Stream notification",
+  "author": " PsykoDev",
+  "permissions": [ "https://api.twitch.tv/", "notifications" ],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "version": "3.0"
 }

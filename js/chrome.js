@@ -16,7 +16,7 @@ var Biche_nav = {
     }
 }
 
-chrome.browserAction.onClicked.addListener(Biche_nav.goIt);
+//chrome.browserAction.onClicked.addListener(Biche_nav.goIt);
 chrome.notifications.onClicked.addListener(function(notificationId){
     if (notificationId === 'notifyON' + Biche_params.title) {
         chrome.tabs.create({ url: Biche.getCurrentRedirectUrl()},function(tab){});
