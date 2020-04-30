@@ -148,7 +148,9 @@ BtnLive.prototype.__get = function(url, type, callback, context) {
             Request({
                 url: url,
                 onComplete: function (response) {
-                    if (response.json) {
+                    if (response.json)
+
+                    {
                         callback(response.json);
                     } else {
                         callback(response.text);
@@ -186,7 +188,6 @@ BtnLive.prototype.__get = function(url, type, callback, context) {
         xhr.send(null);
     }
 }
-
 
 BtnLive.prototype.__checkDone = function(result, chaine) {
     if (this.__isON) return;
