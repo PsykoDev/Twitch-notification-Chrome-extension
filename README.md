@@ -3,7 +3,7 @@
 ##### :heavy_exclamation_mark: NOT FINISH :heavy_exclamation_mark:<br>
 ## Language used
 * [*] java-script
-* [*] htlm 5
+* [*] html 5
 * [*] css 3
 * [*] Jquery
 * [*] Ajax
