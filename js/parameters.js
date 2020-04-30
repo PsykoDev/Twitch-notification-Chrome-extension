@@ -1,5 +1,6 @@
 var Biche_params = {
     "title": "Thewinlo31",
+    "clientID": "i8eceqrr9nem1er5xa9yewo11kdq1c",
     "name": "Thewinlo31",
     "message": "Il est en ligne !",
     "offlineUrl": "http:\/\/www.twitch.tv\/Thewinlo31",

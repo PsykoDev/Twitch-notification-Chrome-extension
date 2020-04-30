@@ -55,8 +55,6 @@ BtnLive.prototype.__dailyLength = BtnLive.prototype.__dailyParams.length;
 BtnLive.prototype.__getUrl = function (id, type, key, name) {
     if (type === "twitch") {
         return "https://api.twitch.tv/helix/streams?user_id=" + id;
-        return "https://api.twitch.tv/helix/streams?user_login=" + name;
-        return "https://api.twitch.tv/helix/users?login=" + id;
     }  else if(type === "youtube") {
         return "https://www.googleapis.com/youtube/v3/search?part=snippet&eventType=live&type=video&key=" + key + "&channelId=" + id + '&t=' + Date.now();
     } else {
@@ -123,7 +121,7 @@ BtnLive.prototype.__check = function(chaine) {
                 }
                 self.__checkDone(online, chaine);
             } else {
-                var online = chaine.type === 'dailymotion' ? data.onair : (data.data[0] !== undefined && data.data[0].title.toLowerCase().indexOf('#secret') == -1);
+                //var online = chaine.type === 'dailymotion' ? data.onair : (data.data[0] !== undefined && data.data[0].title.toLowerCase().indexOf('#secret') == -1);
                 if (online && 'filtre' in chaine) {
                     var titre = chaine.type === 'dailymotion' ? data.title : data.data[0].title;
                     var r = new RegExp(chaine.filtre,"i");
@@ -141,7 +139,7 @@ BtnLive.prototype.__get = function(url, type, callback, context) {
             Request({
                 url: url,
                 headers: {
-                    'Client-ID': 'iinv27ywmtjl2trnievucce2zo7xav1'
+                    'Client-ID': 'i8eceqrr9nem1er5xa9yewo11kdq1c'
                 },
                 onComplete: function (response) {
                     if (response.json) {
@@ -159,7 +157,6 @@ BtnLive.prototype.__get = function(url, type, callback, context) {
 
                     {
                         callback(response.json);
-                        twitchdata();
                     } else {
                         callback(response.text);
                     }
@@ -181,9 +178,10 @@ BtnLive.prototype.__get = function(url, type, callback, context) {
             if (xhr.readyState  == 4) {
                 responseText = xhr.responseText;
                 try {
-                   var json = JSON.parse(responseText);
-                   responseText = json;
-                } catch(e) {
+                    var json = JSON.parse(responseText);
+                    responseText = json;
+                } catch (e) {
+
                 }
                 callback(responseText);
             }
@@ -191,7 +189,7 @@ BtnLive.prototype.__get = function(url, type, callback, context) {
      
         xhr.open("GET", url, true);
         if (type == "twitch") {
-            xhr.setRequestHeader("Client-ID", "iinv27ywmtjl2trnievucce2zo7xav1");
+            xhr.setRequestHeader("Client-ID", "i8eceqrr9nem1er5xa9yewo11kdq1c");
         }
         xhr.send(null);
     }
@@ -227,4 +225,3 @@ BtnLive.prototype.__checkDone = function(result, chaine) {
 if (typeof require !== "undefined") {
     exports.BtnLive = BtnLive;
 }
-

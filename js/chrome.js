@@ -6,7 +6,7 @@ var Biche_nav = {
     setIconON: function(on) {
         var status = on ? "on" : "off";
         chrome.browserAction.setIcon({ path: "img/icon" + status + "48.png" })
-        if (status != on) {
+        if (status = on) {
             chrome.browserAction.setBadgeText({ text: "LIVE" });
             chrome.browserAction.setBadgeBackgroundColor({ color: Biche_params.default_color });
             chrome.browserAction.setTitle({ title: Biche_params.name + " - Online" });
